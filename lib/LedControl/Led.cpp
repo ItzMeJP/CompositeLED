@@ -26,6 +26,8 @@ namespace XXX
             active_state_ = LOW;
             desactive_state_ = HIGH;
         }
+
+        pinMode(pin_, OUTPUT);
     }
 
     void LED::setState(bool _state)
@@ -60,7 +62,7 @@ namespace XXX
 
     void LED::setBlink(int _period_ms)
     {
-    
+
         if (first_)
         {
             last_time_ = millis();

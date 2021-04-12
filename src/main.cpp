@@ -2,7 +2,7 @@
 
 using namespace XXX;
 
-CompositeLED my_led_comp(2, 3, 5,CompositeLED::LED_TYPE::RGB, LED::STATE_TYPE::ACTIVE_HIGH);
+CompositeLED my_led_comp(2, 3, 5,CompositeLED::LED_TYPE::RGB, LED::STATE_TYPE::ACTIVE_LOW);
 
 void setup()
 {
